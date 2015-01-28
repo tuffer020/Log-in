@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login_title">Login Page</string>
+    <string name="username_login">Username</string>
+    <string name="password_login">Password</string>
+    <string name="button_log_in">Sign In</string>
+    <string name="button_sign_up">Sign Up!</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>
