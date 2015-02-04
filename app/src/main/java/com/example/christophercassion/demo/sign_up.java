@@ -4,7 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 
 
 
-public class MainActivity extends ActionBarActivity {
+public class sign_up extends ActionBarActivity {
 
 
 }

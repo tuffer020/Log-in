@@ -7,5 +7,17 @@
     <string name="button_log_in">Sign In</string>
     <string name="button_sign_up">Sign Up!</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_sign_up">sign_up</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="client_email">Email</string>
+    <string name="client_password">Password</string>
+    <string name="client_birthday">Birthday</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="sign_up_title">Sign Up Page!</string>
+    <string name="Register">Register!</string>
+    <string name="app_name">Ezsnip</string>
+    <string name="action_settings">Setting</string>
 
 </resources>
