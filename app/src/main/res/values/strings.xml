@@ -19,5 +19,6 @@
     <string name="Register">Register!</string>
     <string name="app_name">Ezsnip</string>
     <string name="action_settings">Setting</string>
-
+    <!--<string name="btn"></string>-->
+    <!--<string name="btli"></string>-->
 </resources>
