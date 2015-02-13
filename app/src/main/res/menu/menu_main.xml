@@ -3,4 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/comb_scissors_wall_clock"
+        android:title="@string/app_name"
+        app:showAsAction="always" />
+    <item android:id="@+id/name"
+        android:icon="@drawable/comb_scissors_wall_clock"
+        android:title="@string/app_name"
+        app:showAsAction="ifRoom"  />
 </menu>

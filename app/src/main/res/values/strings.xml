@@ -19,6 +19,12 @@
     <string name="Register">Register!</string>
     <string name="app_name">Ezsnip</string>
     <string name="action_settings">Setting</string>
-    <!--<string name="btn"></string>-->
-    <!--<string name="btli"></string>-->
+    <string name="forgot_password">Forgot Password</string>
+    <string name="request_password">Request Password</string>
+    <string name="p_reset_disclaimer">Password will be sent to you via email</string>
+    <!-- <string name="btn"></string> -->
+    <!-- <string name="btli"></string> -->
+    <string name="title_activity_get_password">get_password</string>
+    <string name="title_activity_company_page">company_page</string>
+
 </resources>

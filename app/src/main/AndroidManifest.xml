@@ -15,7 +15,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/comb_scissors_wall_clock"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -35,12 +35,25 @@
         <activity
             android:name=".sign_up"
             android:label="@string/title_activity_sign_up" >
-            <!--<intent-filter >-->
-                <!--<action  android:name="in.wptrafficanalyzer.sign_up"/>-->
-                <!--<category  android:name="android.intent.category.DEFAULT"/>-->
-            <!--</intent-filter>-->
-        </activity>
 
+            <!-- <intent-filter > -->
+            <!-- <action  android:name="in.wptrafficanalyzer.sign_up"/> -->
+            <!-- <category  android:name="android.intent.category.DEFAULT"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".get_password"
+            android:label="@string/title_activity_get_password" >
+
+            <!-- android:parentActivityName=".MainActivity" > -->
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value="com.example.christophercassion.demo.MainActivity" /> -->
+        </activity>
+        <activity
+            android:name=".company_page"
+            android:label="@string/title_activity_company_page" >
+        </activity>
     </application>
 
 </manifest>
