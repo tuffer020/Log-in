@@ -1,12 +1,36 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
     tools:context="com.example.christophercassion.demo.company_page">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/Make_Reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Make_Reservation"
+        android:onClick="sendMessage"/>
+    <Button
+        android:id="@+id/Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Services"
+        android:clickable="true" />
+    <Button
+        android:id="@+id/Rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Rewards"
+        android:clickable="true" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Location"
+        android:clickable="true" />
+
+</TableLayout>

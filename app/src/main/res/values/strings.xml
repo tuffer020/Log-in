@@ -26,5 +26,12 @@
     <!-- <string name="btli"></string> -->
     <string name="title_activity_get_password">get_password</string>
     <string name="title_activity_company_page">company_page</string>
+    <string name="clock_button_des">Appointment</string>
+    <integer name="two">2</integer>
+    <string name="Make_Reservation">Make A Reservation</string>
+    <string name="Services">Services</string>
+    <string name="Rewards">Rewards</string>
+    <string name="Location">Location</string>
+    <string name="Log_out">Logout</string>
 
 </resources>

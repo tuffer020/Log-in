@@ -1,9 +1,14 @@
 package com.example.christophercassion.demo;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 public class company_page extends ActionBarActivity {
@@ -31,6 +36,19 @@ public class company_page extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        }
+        else if (id == R.id.Log_out){
+
+            Intent i= new Intent(company_page.this, MainActivity.class);
+            startActivity(i);
+            finish();
+
+            Context context = getApplicationContext();
+            CharSequence text = "Logged out!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
             return true;
         }
 

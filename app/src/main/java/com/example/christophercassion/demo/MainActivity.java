@@ -52,6 +52,19 @@ public class MainActivity extends Activity {
         Button lostpassword =(Button) findViewById(R.id.lostPassword);
         lostpassword.setOnClickListener(listnr2);
 
+        //Sign_in
+        OnClickListener listnr3;
+        listnr3 = new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k= new Intent(MainActivity.this, company_page.class);
+                startActivity(k);
+                finish();
+            }
+        };
+        Button sign_in =(Button) findViewById(R.id.sign_in);
+        sign_in.setOnClickListener(listnr3);
+
 
     }
 

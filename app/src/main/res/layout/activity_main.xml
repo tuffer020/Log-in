@@ -30,6 +30,7 @@
         android:inputType="textPassword" />
 
     <Button
+        android:id="@+id/sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_log_in"
