@@ -1,5 +1,6 @@
 package com.example.christophercassion.demo;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -17,6 +18,36 @@ public class company_page extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company_page);
+        //testing calendar
+        //calendar = (calendar)this.getApplicationContext();
+        View.OnClickListener listnr4;
+        listnr4 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(company_page.this, calendar.class);
+                startActivity(i);
+                //finish();
+            }
+        };
+        Button butt =(Button) findViewById(R.id.Make_Reservation);
+        butt.setOnClickListener(listnr4);
+
+
+
+
+
+        //Map API
+        View.OnClickListener listnr5;
+        listnr5 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(company_page.this, storeLocation.class);
+                startActivity(j);
+                //finish();
+            }
+        };
+        Button b2 =(Button) findViewById(R.id.Location);
+        b2.setOnClickListener(listnr5);
     }
 
 
