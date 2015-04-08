@@ -3,6 +3,7 @@ package com.example.christophercassion.demo;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -61,5 +62,6 @@ public class storeLocation extends FragmentActivity {
      */
     private void setUpMap() {
         mMap.addMarker(new MarkerOptions().position(new LatLng(26.273771, -80.250883)).title("Diego's HairSalon"));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(26.273771, -80.250883), 13.9f));
     }
 }

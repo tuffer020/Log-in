@@ -45,12 +45,12 @@
         android:hint="@string/client_password"
         android:inputType="textPassword" />
 
-    <EditText android:id="@+id/client_birthday"
-        android:layout_width="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/client_birthday"
-        android:inputType="date" />
+    <!--<EditText android:id="@+id/client_birthday"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/client_birthday"-->
+        <!--android:inputType="date" />-->
 
     <EditText android:id="@+id/phone_number"
         android:layout_width="wrap_content"
