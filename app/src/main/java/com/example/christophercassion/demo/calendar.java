@@ -31,7 +31,7 @@ public class calendar extends ActionBarActivity {
 //    public static final String theYear = "";
 //    boolean isTrue = false;
     public static final String MyPREFERENCES = "MyPrefs" ;
-    SharedPreferences sharedpreferences;
+   // SharedPreferences sharedpreferences;
     //@Override
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     protected void initializeCalendar() {
