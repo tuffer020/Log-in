@@ -21,8 +21,17 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
     int year;
     String spinner_select;
     private TextView selection;
+    private TextView time;
+    private TextView cost;
 
-    private static final String[] items={"Option 1", "Option 2", "Option 3"};
+    private static final String[] items={"Wash & Cut", "Cut", "Bang Cut", "Child (<10)", "Teenagers",
+    "Ultimate Treatment", "Moi Moi Mask", "Hair First Aid", "Wash & Blow", "Flat Iron", "Curling Iron",
+    "UPDO", "Bridal UPDO", "Shortest", "Short", "Medium", "Long", "Additional Flat Iron", "Sauna",
+    "Microderm", "Sweedish", "Deep tissue", "Relax Concoction"};
+
+    private static final String[] prices = {"$29", "$25", "$8", "$16.95", "$20.95", "$35", "$30",
+    "$50","$25-$50", "$15", "$25", "$65", "$95", "$45", "$50", "$55", "$60", "$5", "$40-$49",
+    "$99-$159", "$85", "$80", "$95"};
 
     //int month = date.getInt("month");
     //int year = date.getInt("year");
@@ -37,29 +46,29 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
         year = date.getInt("year");
 
         selection=(TextView)findViewById(R.id.selection);
+        time = (TextView)findViewById(R.id.time);
+        cost = (TextView)findViewById(R.id.cost);
 
+
+        /*
+        Here, we can have an IF statement. First, we would need to pull which stylist will be doing
+        the work
+        Only then we can pull their times.
+
+         */
         Spinner spinner = (Spinner) findViewById(R.id.spinner1);
         spinner.setOnItemSelectedListener(this);
-//        spinner_select = spinner.getSelectedItem().toString();
-//      Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.array_options, android.R.layout.simple_spinner_item);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, items);
+
+
 //      Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 //      Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
-    }
 
-//    public void onItemSelected(AdapterView<?> parent,
-//                               View view, int pos, long id) {
-//        spinner_select = parent.getItemAtPosition(pos).toString();
-//    }
-//
-//    public void onNothingSelected(AdapterView<?> arg0) {
-//        // TODO Auto-generated method stub
-//
-//    }
+    }
 
 
     @Override
@@ -74,7 +83,12 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
 
     public void onItemSelected(AdapterView<?> parent,
                                View v, int position, long id) {
-        selection.setText(items[position]);
+        String info = "Date Chosen: " + month + "/" + day + "/" + year;
+        String info2 = "Work to be Done: " + items[position];
+        String info3 = "Estimate: " + prices[position];
+        selection.setText(info2);
+        time.setText(info);
+        cost.setText(info3);
         Toast newToast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
         newToast.show();
     }

@@ -39,12 +39,13 @@
     <string name="title_activity_store_location">Map</string>
     <string name="title_activity_reservation">reservation</string>
 
-        <string-array name="array_options">
-            <item>Option 1</item>
-            <item>Option 2</item>
-            <item>Option 3</item>
+    <string-array name="array_options">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
 
-        </string-array>
-
+    <string name="title_activity_reservation2">reservation2</string>
+    <string name="title_activity_confirm">confirm</string>
 
 </resources>
