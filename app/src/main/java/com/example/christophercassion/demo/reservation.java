@@ -19,22 +19,28 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
     int day;
     int month;
     int year;
+    String theName;
     String spinner_select;
     private TextView selection;
     private TextView time;
     private TextView cost;
+    private TextView name_dis;
 
+
+    //Provided Services
     private static final String[] items={"Wash & Cut", "Cut", "Bang Cut", "Child (<10)", "Teenagers",
     "Ultimate Treatment", "Moi Moi Mask", "Hair First Aid", "Wash & Blow", "Flat Iron", "Curling Iron",
     "UPDO", "Bridal UPDO", "Shortest", "Short", "Medium", "Long", "Additional Flat Iron", "Sauna",
     "Microderm", "Sweedish", "Deep tissue", "Relax Concoction"};
 
+    //Prices of the service
     private static final String[] prices = {"$29", "$25", "$8", "$16.95", "$20.95", "$35", "$30",
     "$50","$25-$50", "$15", "$25", "$65", "$95", "$45", "$50", "$55", "$60", "$5", "$40-$49",
     "$99-$159", "$85", "$80", "$95"};
 
-    //int month = date.getInt("month");
-    //int year = date.getInt("year");
+    //Name of the workers
+    public static final String[] names = {"Name 1", "Name 2", "Name 3"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +50,14 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
         day = date.getInt("day");
         month = date.getInt("month");
         year = date.getInt("year");
+        theName = date.getString("name");
 
         selection=(TextView)findViewById(R.id.selection);
         time = (TextView)findViewById(R.id.time);
         cost = (TextView)findViewById(R.id.cost);
+        name_dis = (TextView)findViewById(R.id.name_display);
+
+
 
 
         /*
@@ -83,12 +93,15 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
 
     public void onItemSelected(AdapterView<?> parent,
                                View v, int position, long id) {
+
+        String info_name = "Stylist: " + theName;
         String info = "Date Chosen: " + month + "/" + day + "/" + year;
         String info2 = "Work to be Done: " + items[position];
         String info3 = "Estimate: " + prices[position];
         selection.setText(info2);
         time.setText(info);
         cost.setText(info3);
+        name_dis.setText(info_name);
         Toast newToast = Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT);
         newToast.show();
     }

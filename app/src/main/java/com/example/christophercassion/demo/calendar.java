@@ -1,21 +1,19 @@
 package com.example.christophercassion.demo;
 
 import android.annotation.TargetApi;
-import android.content.Context;
+
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.*;
+
 import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+
 import android.widget.CalendarView;
 import android.widget.CalendarView.OnDateChangeListener;
 import android.widget.Toast;
-import android.app.Activity;
+
 
 
 public class calendar extends ActionBarActivity {
@@ -67,7 +65,7 @@ public class calendar extends ActionBarActivity {
                 Toast.makeText(getApplicationContext(), (month+1) + "/" + day + "/" + year, Toast.LENGTH_LONG).show();
 
 
-                Intent i = new Intent(calendar.this, reservation.class);
+                Intent i = new Intent(calendar.this, reservation_stylist.class);
                 Bundle date = new Bundle();
                 date.putInt("day", day);
                 date.putInt("month", month);

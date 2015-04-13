@@ -94,6 +94,14 @@
             android:name=".confirm"
             android:label="@string/title_activity_confirm" >
         </activity>
+        <activity
+            android:name=".reservation_stylist"
+            android:label="@string/title_activity_reservation_stylist" >
+        </activity>
+        <activity
+            android:name=".cancel_res"
+            android:label="@string/title_activity_cancel_res" >
+        </activity>
     </application>
 
 </manifest>

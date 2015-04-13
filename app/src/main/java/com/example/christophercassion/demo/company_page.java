@@ -1,6 +1,6 @@
 package com.example.christophercassion.demo;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -31,6 +31,22 @@ public class company_page extends ActionBarActivity {
         };
         Button butt =(Button) findViewById(R.id.Make_Reservation);
         butt.setOnClickListener(listnr4);
+
+        /*
+            This is going to CANCEL_RES
+         */
+
+        View.OnClickListener listnr6;
+        listnr6 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(company_page.this, cancel_res.class);
+                startActivity(i);
+                //finish();
+            }
+        };
+        Button butt6 =(Button) findViewById(R.id.Cancel_Reservation);
+        butt6.setOnClickListener(listnr6);
 
 
 
