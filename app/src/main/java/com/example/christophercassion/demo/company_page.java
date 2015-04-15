@@ -49,7 +49,31 @@ public class company_page extends ActionBarActivity {
         butt6.setOnClickListener(listnr6);
 
 
+        //Services
+        View.OnClickListener listnr7;
+        listnr7 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(company_page.this, services.class);
+                startActivity(j);
+                //finish();
+            }
+        };
+        Button b7 =(Button) findViewById(R.id.Service);
+        b7.setOnClickListener(listnr7);
 
+        //Rewards
+        View.OnClickListener listnr8;
+        listnr8 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(company_page.this, rewards_page.class);
+                startActivity(j);
+                //finish();
+            }
+        };
+        Button b8 =(Button) findViewById(R.id.Rewards);
+        b8.setOnClickListener(listnr8);
 
 
         //Map API

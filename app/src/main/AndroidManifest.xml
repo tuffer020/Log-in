@@ -23,6 +23,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
         android:allowBackup="true"
@@ -54,7 +56,7 @@
         </activity>
         <activity
             android:name=".get_password"
-            android:label="@string/title_activity_get_password" >
+            android:label="Retrieve Password" >
 
             <!-- android:parentActivityName=".MainActivity" > -->
             <!-- <meta-data -->
@@ -96,11 +98,22 @@
         </activity>
         <activity
             android:name=".reservation_stylist"
-            android:label="@string/title_activity_reservation_stylist" >
+            android:label="Choose a Stylist" >
         </activity>
         <activity
             android:name=".cancel_res"
-            android:label="@string/title_activity_cancel_res" >
+            android:label="Cancellation" >
+        </activity>
+        <activity
+            android:name=".services"
+            android:label="@string/title_activity_services" >
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity
+
+            android:name=".rewards_page"
+            android:label="Active Rewards" >
+
         </activity>
     </application>
 

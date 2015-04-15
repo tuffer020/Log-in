@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -78,6 +79,20 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
         spinner.setAdapter(adapter);
 
 
+        //When confirm has been hit
+        View.OnClickListener listnr7;
+        listnr7 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(reservation.this, company_page.class);
+                startActivity(j);
+                finish();   //We don't want them to press back
+            }
+        };
+        Button b7 =(Button) findViewById(R.id.workToBeDone);
+        b7.setOnClickListener(listnr7);
+
+
     }
 
 
@@ -118,6 +133,19 @@ public class reservation extends ActionBarActivity implements AdapterView.OnItem
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        }
+        else if (id == R.id.Log_out){
+
+            Intent i= new Intent(reservation.this, MainActivity.class);
+            startActivity(i);
+            finish();
+
+            Context context = getApplicationContext();
+            CharSequence text = "Logged out!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
             return true;
         }
 

@@ -1,5 +1,6 @@
 package com.example.christophercassion.demo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -109,7 +110,21 @@ public class reservation_stylist extends ActionBarActivity implements AdapterVie
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        }
+        else if (id == R.id.Log_out){
+
+            Intent i= new Intent(reservation_stylist.this, MainActivity.class);
+            startActivity(i);
+            finish();
+
+            Context context = getApplicationContext();
+            CharSequence text = "Logged out!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
             return true;
         }
 

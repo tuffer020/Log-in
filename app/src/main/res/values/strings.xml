@@ -49,5 +49,8 @@
     <string name="title_activity_confirm">confirm</string>
     <string name="title_activity_reservation_stylist">reservation_stylist</string>
     <string name="title_activity_cancel_res">cancel_res</string>
+    <string name="title_activity_services">services</string>
+    <string name="title_activity_rewards_page">rewards_page</string>
+    <string name="facebook_app_id">380527265468411</string>
 
 </resources>

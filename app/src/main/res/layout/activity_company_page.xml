@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/background_floating_material_dark"
+
+
     tools:context="com.example.christophercassion.demo.company_page">
 
     <Button

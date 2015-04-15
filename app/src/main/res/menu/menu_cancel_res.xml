@@ -4,4 +4,10 @@
     tools:context="com.example.christophercassion.demo.cancel_res">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <!--Logout button-->
+    <item android:id="@+id/Log_out"
+        android:title="@string/Log_out"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
 </menu>
