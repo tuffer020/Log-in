@@ -5,16 +5,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.facebook.FacebookSdk;
-
 
 public class rewards_page extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        //setContentView(R.layout.activity_rewards_page);
+        setContentView(R.layout.activity_rewards_page);
     }
 
 
@@ -22,7 +19,6 @@ public class rewards_page extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_rewards_page, menu);
-
         return true;
     }
 

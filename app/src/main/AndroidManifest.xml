@@ -108,12 +108,10 @@
             android:name=".services"
             android:label="@string/title_activity_services" >
         </activity>
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <!-- <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/> -->
         <activity
-
             android:name=".rewards_page"
-            android:label="Active Rewards" >
-
+            android:label="@string/title_activity_rewards_page" >
         </activity>
     </application>
 

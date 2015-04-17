@@ -52,5 +52,7 @@
     <string name="title_activity_services">services</string>
     <string name="title_activity_rewards_page">rewards_page</string>
     <string name="facebook_app_id">380527265468411</string>
+    <string name="NOTICE">Each time to redeem rewards points, it gets subtracted from your total.
+    Reward point NEVER expire.</string>
 
 </resources>
