@@ -9,15 +9,6 @@
     android:gravity="center"
     android:background="@drawable/homepage_bg">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/login_title"
-        android:id="@+id/Login_title"
-        android:gravity="center|center_horizontal|top" />
-
     <EditText android:id="@+id/username_login"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

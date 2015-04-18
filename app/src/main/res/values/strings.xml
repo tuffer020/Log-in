@@ -24,8 +24,8 @@
     <string name="p_reset_disclaimer">Password will be sent to you via email</string>
     <!-- <string name="btn"></string> -->
     <!-- <string name="btli"></string> -->
-    <string name="title_activity_get_password">get_password</string>
-    <string name="title_activity_company_page">company_page</string>
+    <string name="title_activity_get_password">Retrieve Password</string>
+    <string name="title_activity_company_page">Choose an Option</string>
     <string name="clock_button_des">Appointment</string>
 
     <integer name="two">2</integer>
@@ -35,9 +35,9 @@
     <string name="Rewards">Rewards</string>
     <string name="Location">Location</string>
     <string name="Log_out">Logout</string>
-    <string name="title_activity_calendar">calendar</string>
+    <string name="title_activity_calendar">Calendar</string>
     <string name="title_activity_store_location">Map</string>
-    <string name="title_activity_reservation">reservation</string>
+    <string name="title_activity_reservation">Reservation</string>
 
     <string-array name="array_options">
         <item>Option 1</item>
@@ -47,12 +47,14 @@
 
     <string name="title_activity_reservation2">reservation2</string>
     <string name="title_activity_confirm">confirm</string>
-    <string name="title_activity_reservation_stylist">reservation_stylist</string>
+    <string name="title_activity_reservation_stylist">Choose A Stylist</string>
     <string name="title_activity_cancel_res">cancel_res</string>
     <string name="title_activity_services">services</string>
     <string name="title_activity_rewards_page">rewards_page</string>
     <string name="facebook_app_id">380527265468411</string>
     <string name="NOTICE">Each time to redeem rewards points, it gets subtracted from your total.
     Reward point NEVER expire.</string>
+    <string name="title_activity_view_reservation">View Reservation</string>
+    <string name="info">Reservations: </string>
 
 </resources>

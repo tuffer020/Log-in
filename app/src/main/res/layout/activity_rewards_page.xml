@@ -7,7 +7,8 @@
     tools:context="com.example.christophercassion.demo.rewards_page">
 
     <TextView android:text="@string/NOTICE" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" android:textStyle="bold" />
+
 
         <TableRow>
             <!-- Column 1 -->
@@ -19,7 +20,7 @@
                 android:layout_margin="4dip"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:text="Service" />
+                android:text="Points" />
 
             <!-- Column 2 -->
             <TextView
@@ -30,8 +31,93 @@
                 android:layout_margin="4dip"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:text="Estimate" />
+                android:text="Reward" />
         </TableRow>
+    <TableRow>
+        <!-- Column 1 -->
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:text="10 Points" />
+
+        <!-- Column 2 -->
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:text="Free Bang Cut" />
+    </TableRow>
+
+    <TableRow>
+        <!-- Column 1 -->
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:text="15 Points" />
+
+        <!-- Column 2 -->
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:text="50% OFF ANY haircut" />
+    </TableRow>
+
+    <TableRow>
+        <!-- Column 1 -->
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:text="25 Points" />
+
+        <!-- Column 2 -->
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:text="FREE Haircut" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/backFromRewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/points_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
 
 
+    <Button
+        android:id="@+id/viewRewardPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnButtonClickChangeTextOfTextView"
+        android:text="Current Point Total"
+        android:clickable="true" />
     </TableLayout>

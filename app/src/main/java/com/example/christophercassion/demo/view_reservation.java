@@ -1,6 +1,5 @@
 package com.example.christophercassion.demo;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -8,33 +7,42 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
+
+import java.util.jar.Attributes;
 
 
-public class services extends ActionBarActivity {
+public class view_reservation extends ActionBarActivity {
+
+    /*
+        The 3 variable. You can pull these from the Database
+        I set them to garbage so it won't crash
+     */
+    String nameOfStylist = "Name";
+    String workToBeDone = "Work";
+    String Date = "Some Date";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_services);
+        setContentView(R.layout.activity_view_reservation);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_services, menu);
-        //GO BACK TO COMPANY PAGE
+        getMenuInflater().inflate(R.menu.menu_view_reservation, menu);
         View.OnClickListener listnr8;
         listnr8 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent j = new Intent(services.this, company_page.class);
+                Intent j = new Intent(view_reservation.this, company_page.class);
                 startActivity(j);
                 //finish();
             }
         };
-        Button b8 =(Button) findViewById(R.id.backFromServices);
+        Button b8 =(Button) findViewById(R.id.go_back);
         b8.setOnClickListener(listnr8);
         return true;
     }
@@ -47,24 +55,18 @@ public class services extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
-        }
-        else if (id == R.id.Log_out){
-
-            Intent i= new Intent(services.this, MainActivity.class);
-            startActivity(i);
-            finish();
-
-            Context context = getApplicationContext();
-            CharSequence text = "Logged out!";
-            int duration = Toast.LENGTH_SHORT;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void OnButtonClickChangeTextOfTextView(View view){
+        TextView name = (TextView)findViewById(R.id.stylist_name_view);
+        name.setText("Name of Stylist: " + nameOfStylist);
+        TextView  work= (TextView)findViewById(R.id.work_view);
+        work.setText("Work: " + workToBeDone);
+        TextView appt = (TextView)findViewById(R.id.date_view);
+        appt.setText("Date: " + Date);
     }
 }

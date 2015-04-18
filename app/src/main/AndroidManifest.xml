@@ -113,6 +113,10 @@
             android:name=".rewards_page"
             android:label="@string/title_activity_rewards_page" >
         </activity>
+        <activity
+            android:name=".view_reservation"
+            android:label="@string/title_activity_view_reservation" >
+        </activity>
     </application>
 
 </manifest>
