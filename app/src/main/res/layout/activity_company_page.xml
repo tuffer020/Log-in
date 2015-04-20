@@ -5,49 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/background_floating_material_dark"
+    android:background="@drawable/happiness"
 
 
     tools:context="com.example.christophercassion.demo.company_page">
-
-    <Button
+    <TableRow>
+    <ImageButton
         android:id="@+id/Make_Reservation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Make_Reservation"
+        android:layout_weight="1"
+        android:background="#ffffff"
+
+        android:src="@drawable/booking"
         android:onClick="sendMessage"/>
 
-    <Button
+
+
+
+    <ImageButton
         android:id="@+id/View_Reservation"
         android:layout_width="wrap_content"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="View Reservation"
+        android:src="@drawable/view"
+        android:background="#ffffff"
         android:onClick="sendMessage"/>
 
-    <Button
+
+    <ImageButton
         android:id="@+id/Cancel_Reservation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancel Reservation"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:src="@drawable/cancelation"
         android:clickable="true" />
-    <Button
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Make Reservation"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView android:text="View Reservation"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView android:text="Cancel Reservation"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </TableRow>
+    <TableRow>
+    <ImageButton
         android:id="@+id/Service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Services"
+        android:src="@drawable/services"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
         android:clickable="true" />
-    <Button
+
+
+    <ImageButton
         android:id="@+id/Rewards"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Rewards"
+        android:src="@drawable/rewards"
+        android:background="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
         android:clickable="true" />
 
-    <Button
+    <ImageButton
         android:id="@+id/Location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/location"
+        android:background="#ffffff"
+        android:layout_marginTop="15dp"
         android:text="@string/Location"
+        android:layout_weight="1"
         android:clickable="true" />
+    </TableRow>
 
+    <TableRow>
+        <TextView android:text="Services"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView android:text="Rewards"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView android:text="Location"
+            android:textSize="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </TableRow>
 </TableLayout>

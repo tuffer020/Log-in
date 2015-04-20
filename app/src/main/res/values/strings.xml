@@ -48,12 +48,12 @@
     <string name="title_activity_reservation2">reservation2</string>
     <string name="title_activity_confirm">confirm</string>
     <string name="title_activity_reservation_stylist">Choose A Stylist</string>
-    <string name="title_activity_cancel_res">cancel_res</string>
-    <string name="title_activity_services">services</string>
-    <string name="title_activity_rewards_page">rewards_page</string>
+    <string name="title_activity_cancel_res">Cancel A Reservation</string>
+    <string name="title_activity_services">Services</string>
+    <string name="title_activity_rewards_page">Rewards</string>
     <string name="facebook_app_id">380527265468411</string>
-    <string name="NOTICE">Each time to redeem rewards points, it gets subtracted from your total.
-    Reward point NEVER expire.</string>
+    <string name="NOTICE">Each time you redeem reward points, it gets subtracted from your total.
+    Reward points NEVER expire.</string>
     <string name="title_activity_view_reservation">View Reservation</string>
     <string name="info">Reservations: </string>
 
